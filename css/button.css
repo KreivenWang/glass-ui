@@ -1,0 +1,49 @@
+/*
+ * Button
+ */
+
+button.gls {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+}
+
+button.gls.btn-primary {
+  color: var(--bg);
+  background: var(--accent-cold);
+}
+
+button.gls.btn-secondary {
+  color: var(--bg);
+  background: var(--accent-warm);
+}
+
+button.gls.btn-info {
+  color: var(--bg);
+  background: var(--fg);
+}
+
+button.gls:hover {
+  box-shadow: 20px 20px 50px var(--black-50), 0 0 10px var(--white-20);
+  transform: translateY(-3px);
+}
+
+button.gls.btn-primary:hover {
+  background: var(--accent-cold-highlight);
+}
+
+button.gls.btn-secondary:hover {
+  background: var(--accent-warm-highlight);
+}
+
+button.gls.btn-info:hover {
+  color: var(--bg);
+  background: var(--palewhite);
+}
+
+button.gls:active {
+  box-shadow: 20px 20px 50px var(--black-50), 0 0 20px var(--white-40);
+  background-color: var(--lightgray-70);
+  backdrop-filter: blur(15px);
+  transform: translateY(-1px);
+}

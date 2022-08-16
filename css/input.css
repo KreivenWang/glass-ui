@@ -1,0 +1,54 @@
+/*
+ * input, select 
+ */
+
+input.gls:hover,
+select.gls:hover {
+  border-top: 1px solid var(--lightgray-70);
+  border-left: 1px solid var(--lightgray-70);
+  box-shadow: 20px 20px 50px var(--black), 0 0 10px var(--white-20);
+}
+
+input.gls:focus {
+  box-shadow: 20px 20px 50px var(--black-50), 0 0 20px var(--white-40);
+}
+
+select.gls {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--fg) 50%),
+    linear-gradient(135deg, var(--fg) 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.gls:focus {
+  background-image: linear-gradient(45deg, var(--fg) 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, var(--fg) 50%);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+
+  box-shadow: 20px 20px 50px var(--black-50), 0 0 20px var(--white-40);
+}
+
+.gls-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gls-search-input {
+  padding-left: 2.5rem;
+}
+
+.gls-search-icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+  z-index: 100;
+}

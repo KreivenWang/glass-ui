@@ -1,0 +1,70 @@
+/*
+ * Card
+ */
+.gls-card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gls-card .gls-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.gls-card .gls-card-content h2 {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 7rem;
+  color: var(--white-05);
+}
+
+.gls-card .gls-card-content h3 {
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.gls-card .gls-card-content p {
+  font-size: 1rem;
+  color: var(--white);
+  margin: 10px 0 15px 0;
+}
+
+.gls-card .gls-card-content button {
+  position: relative;
+  padding: 8px 20px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-top: 15px;
+  background-color: var(--white);
+  color: #000;
+  text-decoration: none;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px var(--white-20);
+
+  transform: translateY(100px);
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.gls-card:hover .gls-card-content button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.gls-card .gls-card-content button:hover {
+  box-shadow: 0 0 5px var(--white-20);
+}
+
+.gls-card .gls-card-content button:active {
+  box-shadow: 0 0 15px var(--white-40);
+  background-color: var(--light-gray-50);
+}
