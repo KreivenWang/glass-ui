@@ -1,5 +1,6 @@
 import VanillaTilt from '../3rd-party/vanilla-tilt.min.js';
 import { IanTest } from './test.js';
+import Table from './table.js';
 
 VanillaTilt.init(document.querySelectorAll('.gls-card'), {
   max: 5,
@@ -9,3 +10,4 @@ VanillaTilt.init(document.querySelectorAll('.gls-card'), {
 });
 
 new IanTest().hi();
+Table.initHeaderSort('myTable2');
