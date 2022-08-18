@@ -3,8 +3,8 @@
 <tr>
 <!--When a header is clicked, run the sortTable function, with a parameter,
 0 for sorting by names, 1 for sorting by country: -->
-<th onclick="sortTable(0)">Name</th>
-<th onclick="sortTable(1)">Country</th>
+<th onclick="sortTable(0)">Name <span class="arrow"></span></th>
+<th onclick="sortTable(1)">Country <span class="arrow"></span></th>
 </tr>
 */
 
