@@ -1,7 +1,35 @@
 /*
  * Button
  */
+.a {
+  --accent-warm-highlight: rgba(231, 119, 134, 1);
+  --accent-warm: rgba(238, 156, 167, 1);
+  --accent-warm-10: rgba(238, 156, 167, 0.1);
+  --accent-cold-highlight: rgba(48, 194, 226, 1);
+  --accent-cold: rgba(109, 213, 237, 1);
+  --accent-cold-10: rgba(109, 213, 237, 0.1);
+  --white: rgba(255, 255, 255, 1);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-05: rgba(255, 255, 255, 0.05);
+  --palewhite: rgba(240, 240, 240, 1);
+  --lightgray-70: rgba(233, 233, 233, 0.7);
+  --lightgray-50: rgba(233, 233, 233, 0.5);
+  --black: rgba(0, 0, 0, 1);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --fg: rgba(187, 187, 187, 1);
+  --bg: rgba(22, 22, 38, 1);
+}
 
+/* .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  } */
+.gls-btn-primary {
+  @apply bg-sky-50 hover:bg-sky-500 text-yellow-500 hover:text-black active:bg-sky-700;
+}
+
+/* 
 button.gls {
   cursor: pointer;
   text-decoration: none;
@@ -46,4 +74,4 @@ button.gls:active {
   background-color: var(--lightgray-70);
   backdrop-filter: blur(15px);
   transform: translateY(-1px);
-}
+} */

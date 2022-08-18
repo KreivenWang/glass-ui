@@ -1,45 +1,32 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import './button.css';
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  }
-}
-
 @layer components {
   .gls {
-    @apply border-0 bg-slate-50/10
-    text-white
-    py-2
-    px-4
-    rounded-md
-    border-t-gray-400
-    border-l-stone-100
-    shadow-2xl
-    backdrop-blur-lg;
-  }
-
-  .gls-btn-primary {
-    @apply hover:bg-sky-500
-    hover:text-black
-    active:bg-sky-700;
+    @apply bg-slate-50/15 text-white py-2 px-4 rounded-md border-t-2 border-t-red-900 border-l-gray-400 shadow-2xl backdrop-blur-lg;
   }
 }
 
-@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  outline: none;
+  transition: 0.25s;
+}
 
 :root {
   font-size: 16px;
   font-weight: 400;
   --accent-warm-highlight: rgba(231, 119, 134, 1);
-  --accent-warm: rgba(238, 156, 167, 1);
+  --accent-warm: #ee9ca7;
   --accent-warm-10: rgba(238, 156, 167, 0.1);
   --accent-cold-highlight: rgba(48, 194, 226, 1);
-  --accent-cold: rgba(109, 213, 237, 1);
+  --accent-cold: #6dd5ed;
   --accent-cold-10: rgba(109, 213, 237, 0.1);
   --white: rgba(255, 255, 255, 1);
   --white-40: rgba(255, 255, 255, 0.4);
@@ -52,7 +39,7 @@
   --black: rgba(0, 0, 0, 1);
   --black-50: rgba(0, 0, 0, 0.5);
   --fg: rgba(187, 187, 187, 1);
-  --bg: rgba(22, 22, 38, 1);
+  --bg: #161626;
 }
 
 ::selection {
@@ -69,26 +56,26 @@
   transition: 0.25s;
 }
 
-body {
+/* body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 30px;
   background-color: var(--bg);
-}
+} */
 
 body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(var(--bg), var(--accent-warm), var(--bg));
+  /* content: ''; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background: linear-gradient(var(--bg), var(--accent-warm), var(--bg)); */
   clip-path: circle(30% at 10% 10%);
-  z-index: -999;
+  /* z-index: -999; */
 }
-
+/* 
 body::after {
   content: '';
   position: absolute;
@@ -100,4 +87,4 @@ body::after {
   opacity: 0.5;
   clip-path: circle(50% at right 70%);
   z-index: -999;
-}
+} */
