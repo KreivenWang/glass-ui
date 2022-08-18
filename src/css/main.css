@@ -1,3 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './button.css';
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+}
+
+@layer components {
+  .gls {
+    @apply border-0 bg-slate-50/10
+    text-white
+    py-2
+    px-4
+    rounded-md
+    border-t-gray-400
+    border-l-stone-100
+    shadow-2xl
+    backdrop-blur-lg;
+  }
+
+  .gls-btn-primary {
+    @apply hover:bg-sky-500
+    hover:text-black
+    active:bg-sky-700;
+  }
+}
+
 @import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 :root {
@@ -68,19 +100,4 @@ body::after {
   opacity: 0.5;
   clip-path: circle(50% at right 70%);
   z-index: -999;
-}
-
-.gls {
-  border: 0;
-  background-color: var(--white-10);
-  color: var(--fg);
-  padding: 8px 16px;
-  border-radius: 8px;
-  /* highlight border */
-  border-top: 1px solid var(--lightgray-50);
-  border-left: 1px solid var(--lightgray-50);
-  /* shadow */
-  box-shadow: 20px 20px 50px var(--black-50);
-  /* background blur */
-  backdrop-filter: blur(15px);
 }
